@@ -1,0 +1,148 @@
+body #modal {
+	margin-top: 0;
+}
+
+#modal {
+	background-color: #202020ef;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	/* transition: 400ms; */
+}
+
+#modal.hide {
+	display: none;
+}
+
+#modal {
+	margin-top: 25px;
+	font-size: 21px;
+	text-align: left;
+	/* fade in 
+
+	-webkit-animation: fadein 500ms; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 500ms; /* Firefox < 16 */
+	-ms-animation: fadein 500ms; /* Internet Explorer */
+	-o-animation: fadein 500ms; /* Opera < 12.1 */
+	animation: fadein 500ms;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+#modal .content {
+	color: white;
+
+	width: 420px;
+}
+
+#modal .header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 48px;
+}
+
+#modal .header a {
+	background-image: url("../assets/icones/x.svg");
+
+	width: 20px;
+	height: 20px;
+
+	display: flex;
+
+	font-size: 0PX;
+}
+#modal .header h1 {
+	color: white;
+
+	font-size: 36px;
+	line-height: 42px;
+}
+
+#modal form label {
+	font-size: 14px;
+	line-height: 16px;
+
+	display: block;
+
+	margin: block;
+	margin-bottom: 8px;
+}
+
+#modal form .field {
+	display: flex;
+}
+
+#modal form input {
+	flex: 1;
+
+	background-color: #f0f0f5;
+	border-radius: 8px 0 0 8px;
+	border: 0;
+
+	padding: 16px 24px;
+
+	font-size: 16px;
+	color: #6c6c80;
+}
+
+#modal form button {
+	width: 72px;
+	height: 72px;
+
+	background-color: var(--primary-color);
+
+	border: 0;
+
+	border-radius: 0 8px 8px 0;
+}
+
+#modal form button:hover {
+	background-color: #2fb85e;
+}
+
+/* Modal da pagina do point-created */
+#modal.point .content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#modal.point h1 {
+	color: white;
+
+	margin-top: 32px;
+}

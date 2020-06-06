@@ -1,0 +1,158 @@
+@media (max-width: 900px) {
+	#page-home {
+		background-position-x: 70vw;
+	}
+
+	#page-home .content {
+		align-items: center;
+		text-align: center;
+	}
+
+	#page-home header a {
+		position: absolute;
+		bottom: 30px;
+
+		left: 50%;
+		transform: translatex(-50%);
+	}
+	#page-home main {
+		align-items: center;
+	}
+	#page-search-results .cards {
+		grid-template-columns: 1fr;
+	}
+
+	#page-create-point form h1 {
+		font-size: 28px;
+	}
+
+	#page-create-point form h2 {
+		font-size: 18px;
+	}
+
+	#page-create-point .field-group {
+		flex-direction: column;
+	}
+	#page-create-point .field-group .field + .field {
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 580px) {
+	#page-home main h1 {
+		font-size: 48px;
+	}
+	#page-home main p {
+		font-size: 1.3rem;
+		line-height: 25px;
+		margin-top: 24px;
+	}
+
+	#page-home header a {
+		position: absolute;
+		bottom: 40px;
+		width: 90%;
+		left: 60%;
+		/* font-size: 1.3rem; */
+	}
+	#page-create-point form h1 {
+		font-size: 24px;
+	}
+
+	#page-create-point form h2 {
+		font-size: 14px;
+	}
+
+	#page-search-results .cards {
+		grid-template-columns: 1fr;
+	}
+	#modal .header h1 {
+		font-size: 30px;
+	}
+
+	#page-create-point form {
+		margin: 0 0;
+		padding: 24px;
+	}
+	#page-create-point form legend {
+		display: block;
+	}
+	#page-create-point form legend h2 {
+		margin-bottom: 1rem;
+	}
+	#page-create-point .items-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 16px;
+		margin-right: auto;
+	}
+
+	#page-create-point .items-grid li {
+		height: 11rem;
+		width: 16rem;
+		margin: auto auto;
+
+		display: block;
+	}
+	#page-create-point .items-grid li span {
+		text-align: center;
+		display: block;
+	}
+}
+@media (max-width: 500px) {
+	#page-home main h1 {
+		font-size: 40px;
+	}
+
+	#page-home header a {
+		bottom: 40px;
+		width: 90%;
+		left: 60%;
+	}
+
+	#modal .header h1 {
+		font-size: 30px;
+		margin-left: 5%;
+	}
+	#modal .header h1 a {
+		margin-right: 5%;
+	}
+
+	#modal form button {
+		height: 40px;
+		width: 40px;
+		margin-right: 5%;
+	}
+	#modal form label {
+		display: none;
+	}
+	#modal form input {
+		height: 40px;
+		padding: 2%;
+		margin-left: 5%;
+	}
+}
+
+@media (max-width: 400px) {
+	#page-home main a {
+		height: 40px;
+	}
+	#page-home main a span {
+		height: 40px;
+		margin-right: 5%;
+	}
+	#page-home header a {
+		bottom: 30px;
+	}
+}
+
+@media (min-width: 1700) {
+	#page-home {
+		background-position-x: 40vw;
+	}
+}
+@media (max-height: 760px) {
+	#page-home {
+		background-position-y: 200px;
+	}
+}
